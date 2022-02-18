@@ -28,9 +28,9 @@ This project is an EZCAD2 to EZCAD3 Marking Parameters Library converter (PARAM/
 * Reads the EZCAD3 section template and injects the converted items into it
 * Saves the new EZCAD3 file as `MarkParamlib.ini` into the current folder
 * If you put an existing `MarkParamlib.ini` file into the current folder, the new items will get appended to the bottom of it, preserving all of your existing material parameters
+* Configurable Source Wattage + Lens Size and Target Wattage + Lens Size parameters, which make the Power Ratio recalculate accordingly
 
 ### To do:
-* Add the Source Wattage + Lens Size and Target Wattage + Lens Size parameters, and recalculate the Power Ratio accordingly
 * Remove the extra spaces before and after the key values
 * Move user-updatable parameters to the very top of the file for easy editing
 * Make the exported Description field customizeable
@@ -56,6 +56,8 @@ If you ever want to revert your Windows to throw the message box popups later, y
 
 ## Configuration
 Edit the `section-template.txt` file to adjust the [TC (Time Correction and Delay values)](https://www.youtube.com/watch?v=gFvbrNnvijo) to match your machine.  
+
+Edit the `ezcad-2-to-3.vbs` file to set the source machine and target machine wattage and lens size
 
 ## Usage
 
