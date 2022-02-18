@@ -29,16 +29,13 @@ This project is an EZCAD2 to EZCAD3 Marking Parameters Library converter (PARAM/
 * Saves the new EZCAD3 file as `MarkParamlib.ini` into the current folder
 * If you put an existing `MarkParamlib.ini` file into the current folder, the new items will get appended to the bottom of it, preserving all of your existing material parameters
 * Configurable Source Wattage + Lens Size and Target Wattage + Lens Size parameters, which make the Power Ratio recalculate accordingly
-
-### To do:
-* Remove the extra spaces before and after the key values
-* Move user-updatable parameters to the very top of the file for easy editing
-* Make the exported Description field customizeable
-* Add Wattage and Lens size to the output filename
-* Add more output statements as to indicate what's going on: imported filename, processed section names, output filename
-* Introduce script settings to designate Source and Target machines as MOPA
-* Fix the mapping of the non-MOPA Source to MOPA Target Pulse Width to 200ns. The EZCAD2 non-MOPA settings file is universally set to 10ns, which is wrong, but the non-MOPA machines simply ignore it.
-* If both the Source and the Target machines are MOPA, make the target QPULSEWIDTH value snap to one of the values that the machine is actually configured to use
+* Moved user-updatable parameters to the very top of the file
+* Made the exported Description field customizeable
+* Added Wattage and Lens size to the output filename
+* Added more output statements as to what's going on: imported filename, processed section names, output filename
+* Introduced script settings to designate Source and Target machines as MOPA
+* Fixed the mapping of the non-MOPA Source to MOPA Target Pulse Width to 200ns (Hallman's info from LMA). The LMA settings file is universally set to 10ns, which is wrong, but the non-MOPA machines simply ignore it
+* If both the Source and the Target machines are MOPA, made the target value snap to one of the values that the machine is actually configured to use
 
 ## Technologies
 Project is created with:
@@ -57,7 +54,7 @@ If you ever want to revert your Windows to throw the message box popups later, y
 ## Configuration
 Edit the `section-template.txt` file to adjust the [TC (Time Correction and Delay values)](https://www.youtube.com/watch?v=gFvbrNnvijo) to match your machine.  
 
-Edit the `ezcad-2-to-3.vbs` file to set the source machine and target machine wattage and lens size
+Edit the `ezcad-2-to-3.vbs` file to set the source machine and target machine `Wattage`, `Lens size`, `MOPA/non-MOPA type`, and the `Description` field
 
 ## Usage
 
