@@ -51,7 +51,7 @@ If you ever want to revert your Windows to throw the message box popups later, y
 
 > **\> cscript /h:wscript**
 
-If you prefer not to change your default output for cscript as described above, you can simply run the converter like this:
+If you prefer not to change your default output for cscript as described above, you can simply run the converter as described in the second portion of the [Usage](#usage) section.
 
 ## Configuration
 Edit the `section-template.txt` file to adjust the [TC (Time Correction and Delay values)](https://www.youtube.com/watch?v=gFvbrNnvijo) to match your machine.  
