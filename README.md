@@ -51,6 +51,8 @@ If you ever want to revert your Windows to throw the message box popups later, y
 
 > **\> cscript /h:wscript**
 
+If you prefer not to change your default output for cscript as described above, you can simply run the converter like this:
+
 ## Configuration
 Edit the `section-template.txt` file to adjust the [TC (Time Correction and Delay values)](https://www.youtube.com/watch?v=gFvbrNnvijo) to match your machine.  
 
@@ -58,8 +60,13 @@ Edit the `ezcad-2-to-3.vbs` file to set the source machine and target machine `W
 
 ## Usage
 
-Simply run from the command prompt:
+If you modified your default output as described in the [Setup](#setup) section, simply run from the command prompt:
 > **\> ezcad-2-to-3.vbs**
+
+Otherwise run it from the command prompt like this:
+
+> **\> cscript.exe ezcad-2-to-3.vbs**
+
 
 Once the script runs your new EZCAD3 `MarkParamlib.ini` file will be saved in the same folder. Move it to the `PARAM` subfolder in your EZCAD3 installation.
 
