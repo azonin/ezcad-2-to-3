@@ -11,7 +11,7 @@ n_TargetLens = 110
 s_Description = "Converted by ezcad-2-to-3"
 
 WScript.Echo Chr(16) & String(115,Chr(150)) & Chr(17)
-WScript.Echo Chr(166) & " Convert EZCAD2 to EZCAD3 Marking Parameters Library Converter v1.2                                                " & Chr(166)
+WScript.Echo Chr(166) & " Convert EZCAD2 to EZCAD3 Marking Parameters Library Converter v1.21                                               " & Chr(166)
 WScript.Echo Chr(166) & " Copyright " & Chr(169) & " 2022 Alex Zonin                                                                                       " & Chr(166)
 WScript.Echo Chr(166) & String(115,Chr(150)) & Chr(166)
 WScript.Echo Chr(166) & " - Imports the MarkParam.lib file (EZCAD2 format)                                                                  " & Chr(166)
