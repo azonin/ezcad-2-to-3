@@ -30,7 +30,7 @@ This project is an EZCAD2 to EZCAD3 Marking Parameters Library converter (PARAM/
 * If you put an existing `MarkParamlib.ini` file into the current folder, the new items will get appended to the bottom of it, preserving all of your existing material parameters
 * Configurable Source Wattage + Lens Size and Target Wattage + Lens Size parameters, which make the Power Ratio recalculate accordingly
 * Moved user-updatable parameters to the very top of the file
-* Made the exported Description field customizeable
+* Made the exported Description field customizable
 * Added Wattage and Lens size to the output filename
 * Added more output statements as to what's going on: imported filename, processed section names, output filename
 * Introduced script settings to designate Source and Target machines as MOPA
